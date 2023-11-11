@@ -1,21 +1,13 @@
 from django.shortcuts import render, redirect
 from .forms import FeedbackForm
 
+
 def home_view(request):
-    return render(request, 'home.html')
+    return render(request, 'catalog/contact.html')
 
 
 def contact_view(request):
     return render(request, 'contact.html')
-
-
-def home_view(request):
-    return render(request, 'home.html')
-
-
-def contact_view(request):
-    return render(request, 'contact.html')
-
 
 
 def contacts(request):
