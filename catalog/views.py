@@ -6,10 +6,6 @@ def home_view(request):
     return render(request, 'catalog/contact.html')
 
 
-def contact_view(request):
-    return render(request, 'contact.html')
-
-
 def contacts(request):
     if request.method == 'POST':
         form = FeedbackForm(request.POST)
@@ -19,4 +15,4 @@ def contacts(request):
     else:
         form = FeedbackForm()
 
-    return render(request, 'contacts.html', {'form': form})
+    return render(request, 'catalog/contacts.html', {'form': form})
